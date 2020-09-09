@@ -6,8 +6,14 @@
 </center>
 <br>
 
- A simple script to install heroku CLI on Termux android app with a single click.
+ A simple bash script to install heroku CLI on Termux android app with a single click.
 
 ## Installation:
 Just paste the below code in your termux and Done!. Everything will be automatically installed. <br>
 ```sh -c "$(curl -fsSL https://raw.githubusercontent.com/SKGHD/Termux-heroku-cli/master/install.sh)"```
+
+## Getting started:
+1. Login using ```heroku login -i```
+2. Create app using ```heroku create <app name>```
+3. For a list of commands available ```heroku help```
+4. For more info visit : https://devcenter.heroku.com/articles/using-the-cli
