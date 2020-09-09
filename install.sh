@@ -5,6 +5,7 @@ wget http://cli-assets.heroku.com/heroku-linux-arm.tar.gz -O heroku.tar.gz
 tar -xvzf heroku.tar.gz
 mkdir -p /data/data/com.termux/files/usr/lib/heroku
 mv heroku/* /data/data/com.termux/files/usr/lib/heroku
+rm -rf heroku heroku.tar.gz
 ln -s /data/data/com.termux/files/usr/lib/heroku/bin/heroku /data/data/com.termux/files/usr/bin/heroku
 cd /data/data/com.termux/files/usr/lib/heroku/bin/
 sed -i 's/#!/#!\/data\/data\/com.termux\/files/g' heroku
